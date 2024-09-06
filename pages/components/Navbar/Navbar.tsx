@@ -9,7 +9,7 @@ import { NavButton, ThemeToggle } from './components'
 import styles from './Navbar.module.css'
 
 export const Navbar = () => {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
 
   return (
     <Box component="nav" className={styles.container}>

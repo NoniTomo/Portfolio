@@ -3,7 +3,7 @@ import { ReactComponent as ArrowLeftIcon } from '@assets/icons/ArrowLeft.svg'
 import { ReactComponent as GithubIcon } from '@assets/icons/Github.svg'
 import { Card } from '@src/components'
 import { ROUTES } from '@src/constants'
-import { Typography } from '@src/shared/components'
+import { Box, Typography } from '@src/shared/components'
 import { useData } from '@src/shared/hooks/useData'
 import clsx from 'clsx'
 
@@ -14,10 +14,10 @@ export const Project = () => {
   const { projects } = useData()
   const project = projects.find((project) => project.id == params.id!)!
   return (
-    <>
+    <Box className={styles.container}>
       <Link className={clsx(styles.link, styles.toback)} to={ROUTES.PROJECTS}>
         <ArrowLeftIcon className={styles.link__icon} />
-        <Typography variant="p" className={styles.link__text}>
+        <Typography variant="h5" className={styles.link__text}>
           Назад
         </Typography>
       </Link>
@@ -51,6 +51,6 @@ export const Project = () => {
           </Card.Description>
         </Card.Content>
       </Card>
-    </>
+    </Box>
   )
 }

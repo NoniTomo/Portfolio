@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { About, Error, Project, Projects, Root } from '@pages/index'
 
 import { ROUTES } from './constants'
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '*',
         element: <Error />
+      },
+      {
+        index: true,
+        element: <Navigate to={ROUTES.PROJECTS} />
       }
     ]
   }

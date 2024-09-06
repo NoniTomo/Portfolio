@@ -11,13 +11,26 @@
 .link__icon {
   width: 30px;
   height: 30px;
+  display: inline;
   fill: var(--color-text);
+}
+
+.link__icon > * {
+  margin: auto;
 }
 
 .toback {
   cursor: pointer;
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
-  gap: 16px;
+  gap: 4px;
   text-decoration: none;
+}
+
+@media (width < 475px) {
+
+  .container {
+    margin-inline: 60px 20px;
+  }
 }
