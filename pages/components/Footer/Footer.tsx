@@ -20,7 +20,7 @@ export const Footer = ({ ...props }: FooterProps) => {
           {contacts[0].resource}
         </Typography>
       </Link>
-      <Link className={clsx(styles.link, styles.toback)} to={contacts[0].link}>
+      <Link className={clsx(styles.link, styles.toback)} to={contacts[1].link}>
         <GithubIcon className={styles.link__icon} />
         <Typography variant="h5" className={styles.link__text}>
           {contacts[1].resource}
