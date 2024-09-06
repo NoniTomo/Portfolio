@@ -1,0 +1,35 @@
+.text {
+  font-weight: 300;
+  margin-left: 10px;
+  margin-block: auto;
+  color: var(--color-text);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-text);
+}
+
+.icon_active {
+  fill: rgb(208 92 92);
+}
+
+.text_active {
+  color: rgb(208 92 92);
+}
+
+.button {
+  width: 160px;
+}
+
+@media (width <= 700px) {
+
+  .button {
+    width: 40px;
+  }
+
+  .text {
+    display: none;
+  }
+}

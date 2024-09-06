@@ -18,7 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@src/*": ["./src/*"],
+      "@pages/*": ["./pages/*"],
+      "@static/*": ["./static/*"],
+      "@assets/*": ["./assets/*"],
+      "@styles/*": ["./styles/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

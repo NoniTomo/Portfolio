@@ -1,0 +1,6 @@
+.card__header {
+  font-size: 25px;
+  margin-block: auto;
+  font-weight: 700;
+  color: var(--color-text);
+}

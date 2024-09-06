@@ -1,0 +1,16 @@
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.card__list_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__list_row {
+  display: flex;
+  flex-direction: row;
+}

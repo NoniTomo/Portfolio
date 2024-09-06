@@ -1,0 +1,17 @@
+.button {
+  margin-block: 10px;
+}
+
+.container {
+  z-index: 1000;
+  background-color: var(--color-body);
+  border-radius: 10px;
+}
+
+.container_open {
+  display: visible;
+}
+
+.container_close {
+  display: none;
+}

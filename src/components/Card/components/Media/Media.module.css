@@ -1,0 +1,8 @@
+.card__media {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: transparent no-repeat left;
+  background-size: cover;
+  border-radius: 15px;
+}

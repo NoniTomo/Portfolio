@@ -1,0 +1,39 @@
+.wrapper {
+  padding-block: 10px 60px;
+  padding-left: 190px;
+  box-sizing: border-box;
+}
+
+@media (width <= 700px) {
+
+  .wrapper {
+    padding-left: 50px;
+  }
+
+  .text {
+    visibility: hidden;
+  }
+}
+
+.footer {
+  background: var(--bg-secondary);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.wrapper__nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+@media (width <= 475px) {
+
+  .wrapper {
+    padding-inline: 40px;
+    box-sizing: border-box;
+  }
+}

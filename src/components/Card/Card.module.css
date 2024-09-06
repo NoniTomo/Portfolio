@@ -1,0 +1,18 @@
+.card {
+  background-color: var(--bg-secondary);
+  width: auto;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.card_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card_column {
+  display: flex;
+  flex-direction: column;
+}

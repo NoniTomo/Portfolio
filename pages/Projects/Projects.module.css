@@ -1,0 +1,22 @@
+.link {
+  display: flex;
+  gap: 10px;
+}
+
+.link__text {
+  color: var(--color-text);
+  margin-block: auto;
+}
+
+.link__icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-text);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}

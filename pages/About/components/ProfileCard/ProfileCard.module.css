@@ -1,0 +1,75 @@
+.card {
+  min-height: 180px;
+  width: 100%;
+}
+
+.card_background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 190px;
+  background: var(--bg-primary);
+  width: 100%;
+}
+
+.card_avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar {
+  z-index: 2;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: transparent no-repeat center;
+  background-size: cover;
+  background-image: url('/assets/images/avatar.png');
+  border-radius: 50%;
+}
+
+.card_content {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  background-color: var(--color-body);
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  padding-top: 60px;
+  padding-inline: 25px;
+}
+
+@media (width >= 475px) {
+
+  .card {
+    position: relative;
+  }
+
+  .avatar {
+    top: -30px;
+    left: 15px;
+  }
+
+  .card_background {
+    position: static;
+    width: 100%;
+    border-radius: 15px;
+    height: 116px;
+  }
+
+  .card_content {
+    position: static;
+    justify-content: left;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 0 0 132px;
+    box-sizing: border-box;
+  }
+}
